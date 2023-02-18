@@ -37,49 +37,49 @@ Overall, these are just a few of the many common things related to Git. Understa
 # git add 
 This command adds changes made to a file or set of files to the staging area. The staging area is where you can review and prepare changes before committing them.
 
-* Exapmle
+ # Exapmle
 
     git add file_name   or git add .
 
 # git commit 
 This command creates a new commit with the changes made to the files in the staging area. Each commit has a unique identifier and a commit message that describes the changes made.
 
-* Exapmle
+ # Exapmle
 
     git commit -m "here your message"
 
 # git push
 This command uploads changes from your local repository to a remote repository. This is typically done to share changes with other developers or to update the codebase in a shared repository.
 
-* Exapmle
+ # Exapmle
 
     git push origin feature_branch_name
 
 # git pull
 This command downloads changes from a remote repository and merges them into your local repository. This is typically done to update your local repository with changes made by other developers.
 
-* Exapmle
+ # Exapmle
 
     git pull origin master
 
 # git stash
 This command temporarily saves changes that are not yet ready to be committed. This is useful when you need to switch to a different branch or work on a different task without losing your changes.
 
-* Exapmle
+ # Exapmle
 
     git stash
 
 # git stash list
 In This command in Git that displays a list of all stashes that are currently saved in the repository. The command displays the stash reference, the message associated with the stash, and the date and time the stash was created.
 
-* Exapmle
+ # Exapmle
 
     git stash list
 
 # git stash pop
 This command applies changes saved in the stash back to the working directory. This is useful when you want to retrieve changes that were saved using git stash
 
-* Exapmle
+ # Exapmle
 
     git stash pop
 
