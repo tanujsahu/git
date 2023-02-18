@@ -1,0 +1,44 @@
+Here is the correct way to do the git interactive rebase In the global .gitconfig (under the mac home directory, hidden file), 
+setup the following and it will help your interactive rebase. 
+It will open the editor for you to edit in the VS Code.
+
+
+find gitconfig file and update it
+
+* sudo find / -name .gitconfig   ( find file )
+* nano /home/tanuj/.gitconfig    ( open file )
+
+## 
+
+[core]
+editor = code --wait # default editor will be VS Code
+[rebase]
+instructionFormat = %s [%an] # add the commit author to the end of each line
+
+
+##
+
+
+
+#Steps
+
+go to your feature branch
+git fetch
+git rebase -i origin/develop
+it will open the editor and remove all commits that are NOT yours
+then close the editor
+if there are conflicts, fix it manually, save and commit it
+git rebase -- continue
+#important, don’t do any git pull to merge from remote
+git push -- force-with-lease (overwrite the remote even there is divergent)
+
+
+## Example 
+
+* git checkout master
+* git pull
+* git checkout feature_branch
+* git rebase master
+* resolve (manually) conflict if any
+* git push --force-with-lease
+
