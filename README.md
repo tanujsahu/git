@@ -37,6 +37,8 @@ Overall, these are just a few of the many common things related to Git. Understa
 * git add: 
 This command adds changes made to a file or set of files to the staging area. The staging area is where you can review and prepare changes before committing them.
 
+# Exapmle
+
     git add file_name   or git add .
 
 * git commit: This command creates a new commit with the changes made to the files in the staging area. Each commit has a unique identifier and a commit message that describes the changes made.
