@@ -83,6 +83,13 @@ This command applies changes saved in the stash back to the working directory. T
 
     git stash pop
 
+# git stash apply
+This command applies changes saved in the stash back to the working directory.
+
+ # Exapmle
+
+    git stash apply
+
 
 
 
