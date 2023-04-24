@@ -41,6 +41,13 @@ This command adds changes made to a file or set of files to the staging area. Th
 
     git add file_name   or git add .
 
+# git add -p
+is a command used in Git to interactively stage changes to a file. The -p flag stands for "patch," and it allows you to review each change to the file and decide whether to include it in the commit or not..
+
+ # Exapmle
+
+    git add -p ((1/1) Stage this hunk [y,n,q,a,d,e,?]?)
+
 # git commit 
 This command creates a new commit with the changes made to the files in the staging area. Each commit has a unique identifier and a commit message that describes the changes made.
 
